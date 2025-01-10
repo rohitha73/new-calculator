@@ -1,0 +1,45 @@
+body{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.display{
+    display: flex;
+    height: 100px;
+    background-color: #f1f1f1;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.abutton{
+    padding: 20px 40px;
+    background-color: #f1f1f1;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1px;
+    font-weight: bold;
+}
+.container-buttons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.equal{
+    grid-row: span 2;
+}
+.clear{
+    grid-column: span 2;
+    color: red;
+}
+.abutton:hover{
+    background-color: #ccc;
+}
